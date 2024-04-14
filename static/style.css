@@ -1,0 +1,164 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image:url(background.jpeg);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    background-color: #424345;
+    color: #fffcfc;
+    padding: 20px;
+    text-align: center;
+    margin: 0;
+    font-size: 24px;
+}
+
+form {
+    background-color: #e7e3e3;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form input[type="file"] {
+    width: 20%;
+    padding: 10px;
+    margin-bottom: 2px;
+    border: 3px solid #000000;
+    border-radius: 15px;
+    left: 10px;
+    top: 10px;
+}
+
+form input[type="submit"] {
+    width: 30%;
+    padding: 15px;
+    background-color: hsl(0, 1%, 21%);
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+   
+
+
+}
+
+form input[type="submit"]:hover {
+    background-color: #5e5f61;
+}
+
+h2 {
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 0px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #728ab9;
+    font-weight: bold;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+
+.container.login-container {
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 400px;
+}
+
+.login-heading {
+    background-color: #373d43;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin: 0;
+    font-size: 24px;
+}
+
+.login-form {
+    padding: 20px;
+}
+
+.login-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #353232;
+    border-radius: 5px;
+}
+
+.login-submit {
+    width: 100%;
+    padding: 10px;
+    background-color: #464749;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-submit:hover {
+    background-color: #1e1f20;
+}
+
+
+/* Добавьте этот код в style.css */
+.delete-link {
+    color: #dc3545;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+.delete-link:hover {
+    text-decoration: underline;
+}
+/* Добавьте этот код в style.css */
+.logout-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px;
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+    background-color: #c82333;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en",dir="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=width-device, initial-scale=1.0">
+    <title>Вход</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    {{ toastr.include_jquery() }}
+    {{ toastr.include_toastr_css() }}
+    {{ toastr.message() }}
+</head>
+<style>
+    .login-container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+</style>
+<body>
+    <div class="container login-container">
+        
+        <!-- Блок для отображения флэш-сообщений -->
+        {{ toastr.include_toastr_js() }}
+        <!-- Форма входа -->
+        <form method="POST">
+            {{ form.hidden_tag() }}
+            <div class="login-form">
+                <input type="text" name="username" class="login-input" placeholder="Имя пользователя" required>
+                <input type="password" name="password" class="login-input" placeholder="Пароль" required>
+                <input type="submit" value="Login" class="login-submit">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
